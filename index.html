@@ -630,6 +630,43 @@
         .carousel-btn.prev { left: 10px; }
         .carousel-btn.next { right: 10px; }
 
+        /* Year grouping + tags in gallery */
+        .gallery-year {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin: 45px 0 22px;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--neon-purple);
+        }
+
+        .gallery-year::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(191, 0, 255, 0.55), transparent);
+        }
+
+        .agency-gallery h3 {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-tag {
+            font-size: 0.72rem;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 245, 255, 0.4);
+            color: var(--neon-cyan);
+            opacity: 0.85;
+            font-weight: 500;
+        }
+
         /* Media Coverage */
         .media-list {
             display: flex;
@@ -926,7 +963,7 @@
                 </div>
                 <div class="why-card">
                     <h3>Agensi Kerajaan</h3>
-                    <p>10+ agensi kerajaan Sabah telah menjalankan kursus ini untuk kakitangan mereka.</p>
+                    <p>15 agensi dan organisasi Sabah telah menjalankan kursus ini untuk kakitangan dan komuniti mereka.</p>
                 </div>
                 <div class="why-card">
                     <h3>Peluang kerjaya</h3>
@@ -941,223 +978,336 @@
             <div class="org-grid">
                 <div class="org-card">
                     <h3><span class="number">1</span>Kementerian Kerja Raya Sabah (KKRS)</h3>
-                    <span class="tag">Kursus Asas AI • 2025</span>
+                    <span class="tag">Kursus AI • 2024</span>
                 </div>
                 <div class="org-card">
                     <h3><span class="number">2</span>Yayasan Sabah</h3>
-                    <span class="tag">Kursus AI Lanjutan • 2025</span>
+                    <span class="tag">Kursus AI • 2024</span>
                 </div>
                 <div class="org-card">
                     <h3><span class="number">3</span>Pejabat Hasil Bumi Sabah</h3>
-                    <span class="tag">Kursus Asas AI • 2025</span>
+                    <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
                     <h3><span class="number">4</span>Kementerian Kesihatan</h3>
-                    <span class="tag">Kursus Asas AI • 2025</span>
+                    <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
-                    <h3><span class="number">5</span>Sediafiat & Jabatan Kesihatan</h3>
+                    <h3><span class="number">5</span>Sedafiat &amp; Jabatan Kesihatan</h3>
                     <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
                     <h3><span class="number">6</span>Universiti Malaysia Sabah</h3>
-                    <span class="tag">Kursus AI Lanjutan • 2025</span>
+                    <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
                     <h3><span class="number">7</span>Lembaga Pertubuhan Peladang</h3>
-                    <span class="tag">Kursus Asas AI</span>
+                    <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
                     <h3><span class="number">8</span>Dewan Usahawan Melayu Sabah</h3>
-                    <span class="tag">Kursus AI untuk bisnes</span>
+                    <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
                     <h3><span class="number">9</span>Taman-taman Sabah</h3>
-                    <span class="tag">Kursus Asas AI</span>
+                    <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
-                    <h3><span class="number">10</span>Pejabat Daerah Putatan</h3>
-                    <span class="tag">Kursus Asas AI • 2025</span>
+                    <h3><span class="number">10</span>UPKO Inanam</h3>
+                    <span class="tag">Kursus AI • 2025</span>
                 </div>
                 <div class="org-card">
-                    <h3><span class="number">11</span>Persatuan Industri Kecil dan Sederhana Wanita Sabah (IKSNita)</h3>
-                    <span class="tag">Program Perantis Go Digital • 2026</span>
+                    <h3><span class="number">11</span>Pejabat Daerah Putatan</h3>
+                    <span class="tag">Kursus AI • 2026</span>
                 </div>
                 <div class="org-card">
-                    <h3><span class="number">12</span>Perpustakaan Tanjung Aru</h3>
-                    <span class="tag">Literasi AI • 2026</span>
+                    <h3><span class="number">12</span>Pejabat Daerah Nabawan</h3>
+                    <span class="tag">Kursus AI • 2026</span>
                 </div>
                 <div class="org-card">
-                    <h3><span class="number">13</span>Pejabat Daerah Nabawan</h3>
-                    <span class="tag">Kursus Asas AI • 2026</span>
+                    <h3><span class="number">13</span>Perpustakaan Tanjung Aru</h3>
+                    <span class="tag">Kursus AI • 2026</span>
+                </div>
+                <div class="org-card">
+                    <h3><span class="number">14</span>IKSNita Sabah</h3>
+                    <span class="tag">Kursus AI • 2026</span>
+                </div>
+                <div class="org-card">
+                    <h3><span class="number">15</span>Perantis Go Digital – Keretapi Bersarong</h3>
+                    <span class="tag">Kursus AI • 2026</span>
                 </div>
             </div>
         </section>
 
         <section class="section" id="galeri">
             <h2 class="section-title">Galeri Aktiviti Mengikut Agensi</h2>
+            <p class="section-subtitle"><span style="background: var(--neon-purple); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem;">15 kursus AI dilaksanakan • 2024–2026</span></p>
+
+            <h3 class="gallery-year">2024</h3>
 
             <div class="agency-gallery" id="gallery-kkrs">
-                <h3>Kementerian Kerja Raya Sabah (KKRS)</h3>
+                <h3>1. Kementerian Kerja Raya Sabah (KKRS)<span class="gallery-tag">2024</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('kkrs', -1)">&#10094;</button>
+                    <button class="carousel-btn prev" onclick="moveSlide('kkrs', -1)" aria-label="Foto sebelum">&#10094;</button>
                     <div class="carousel-track" id="track-kkrs">
                         <div class="carousel-slide">
-                            <img src="img/gallery/BJylnpbCTVDlc3okotKud.jpg" alt="KKRS" onclick="openLightbox(this.src)">
+                            <img class="photo-fit" src="img/gallery/kkrs-1.jpg" alt="Kementerian Kerja Raya Sabah (KKRS) — kursus AI 2024, foto 1 daripada 2" width="337" height="444" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img src="img/gallery/df_TOc4sKvK3kpeWpNRwW.jpg" alt="KKRS" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/kkrs-2.jpg" alt="Kementerian Kerja Raya Sabah (KKRS) — kursus AI 2024, foto 2 daripada 2" width="726" height="443" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('kkrs', 1)">&#10095;</button>
+                    <button class="carousel-btn next" onclick="moveSlide('kkrs', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
 
-            <div class="agency-gallery" id="gallery-yayasan">
-                <h3>Yayasan Sabah</h3>
+            <div class="agency-gallery" id="gallery-yayasan-sabah">
+                <h3>2. Yayasan Sabah<span class="gallery-tag">2024</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('yayasan', -1)">&#10094;</button>
-                    <div class="carousel-track" id="track-yayasan">
+                    <button class="carousel-btn prev" onclick="moveSlide('yayasan-sabah', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-yayasan-sabah">
                         <div class="carousel-slide">
-                            <img src="img/gallery/TCjEluCmfuEt23d87xuzm.jpg" alt="Yayasan Sabah" onclick="openLightbox(this.src)">
+                            <img class="photo-fit" src="img/gallery/yayasan-sabah-1.jpg" alt="Yayasan Sabah — kursus AI 2024, foto 1 daripada 4" width="862" height="375" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img src="img/gallery/O9fzbhssi3k9TUhgAPL2W.jpg" alt="Yayasan Sabah" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/yayasan-sabah-2.jpg" alt="Yayasan Sabah — kursus AI 2024, foto 2 daripada 4" width="454" height="375" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/yayasan-sabah-3.jpg" alt="Yayasan Sabah — kursus AI 2024, foto 3 daripada 4" width="642" height="395" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/yayasan-sabah-4.jpg" alt="Yayasan Sabah — kursus AI 2024, foto 4 daripada 4" width="551" height="396" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('yayasan', 1)">&#10095;</button>
+                    <button class="carousel-btn next" onclick="moveSlide('yayasan-sabah', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
 
-            <div class="agency-gallery" id="gallery-hasilbumi">
-                <h3>Pejabat Hasil Bumi Sabah</h3>
+            <h3 class="gallery-year">2025</h3>
+
+            <div class="agency-gallery" id="gallery-hasil-bumi">
+                <h3>3. Pejabat Hasil Bumi Sabah<span class="gallery-tag">2025</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('hasilbumi', -1)">&#10094;</button>
-                    <div class="carousel-track" id="track-hasilbumi">
+                    <button class="carousel-btn prev" onclick="moveSlide('hasil-bumi', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-hasil-bumi">
                         <div class="carousel-slide">
-                            <img src="img/gallery/zLO4VSTWLfAV0e2sVfM9O.jpg" alt="Hasil Bumi" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/hasil-bumi-1.jpg" alt="Pejabat Hasil Bumi Sabah — kursus AI 2025, foto 1 daripada 2" width="636" height="476" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img src="img/gallery/RIbm-LmYCJWs7-AzIPzO2.jpg" alt="Hasil Bumi" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/hasil-bumi-2.jpg" alt="Pejabat Hasil Bumi Sabah — kursus AI 2025, foto 2 daripada 2" width="640" height="477" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('hasilbumi', 1)">&#10095;</button>
+                    <button class="carousel-btn next" onclick="moveSlide('hasil-bumi', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
 
-            <div class="agency-gallery" id="gallery-kesihatan">
-                <h3>Kementerian Kesihatan & Sediafiat</h3>
+            <div class="agency-gallery" id="gallery-kementerian-kesihatan">
+                <h3>4. Kementerian Kesihatan<span class="gallery-tag">2025</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('kesihatan', -1)">&#10094;</button>
-                    <div class="carousel-track" id="track-kesihatan">
+                    <button class="carousel-btn prev" onclick="moveSlide('kementerian-kesihatan', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-kementerian-kesihatan">
                         <div class="carousel-slide">
-                            <img src="img/gallery/MGTjdbRcdgV1jKjj11Mwf.jpg" alt="Kesihatan" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/kementerian-kesihatan-1.jpg" alt="Kementerian Kesihatan — kursus AI 2025, foto 1 daripada 3" width="509" height="377" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img src="img/gallery/Bu7Nlsn0Cpqiea5N8pk50.jpg" alt="Kesihatan" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/kementerian-kesihatan-2.jpg" alt="Kementerian Kesihatan — kursus AI 2025, foto 2 daripada 3" width="574" height="381" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/kementerian-kesihatan-3.jpg" alt="Kementerian Kesihatan — kursus AI 2025, foto 3 daripada 3" width="294" height="377" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('kesihatan', 1)">&#10095;</button>
+                    <button class="carousel-btn next" onclick="moveSlide('kementerian-kesihatan', 1)" aria-label="Foto seterusnya">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="agency-gallery" id="gallery-sedafiat">
+                <h3>5. Sedafiat &amp; Jabatan Kesihatan<span class="gallery-tag">2025</span></h3>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide('sedafiat', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-sedafiat">
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/sedafiat-1.jpg" alt="Sedafiat &amp; Jabatan Kesihatan — kursus AI 2025, foto 1 daripada 2" width="703" height="364" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/sedafiat-2.jpg" alt="Sedafiat &amp; Jabatan Kesihatan — kursus AI 2025, foto 2 daripada 2" width="489" height="365" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('sedafiat', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
 
             <div class="agency-gallery" id="gallery-ums">
-                <h3>Universiti Malaysia Sabah (UMS)</h3>
+                <h3>6. Universiti Malaysia Sabah<span class="gallery-tag">2025</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('ums', -1)">&#10094;</button>
+                    <button class="carousel-btn prev" onclick="moveSlide('ums', -1)" aria-label="Foto sebelum">&#10094;</button>
                     <div class="carousel-track" id="track-ums">
                         <div class="carousel-slide">
-                            <img src="img/gallery/DCCjAB9mkfR0cU5lcJut4.jpg" alt="UMS" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/ums-1.jpg" alt="Universiti Malaysia Sabah — kursus AI 2025, foto 1 daripada 2" width="778" height="423" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img src="img/gallery/GGPHSRLgl2W5i3JGYRk1a.jpg" alt="UMS" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/ums-2.jpg" alt="Universiti Malaysia Sabah — kursus AI 2025, foto 2 daripada 2" width="672" height="424" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('ums', 1)">&#10095;</button>
+                    <button class="carousel-btn next" onclick="moveSlide('ums', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
 
-            <div class="agency-gallery" id="gallery-dewan">
-                <h3>Dewan Usahawan Melayu Sabah</h3>
+            <div class="agency-gallery" id="gallery-lembaga-pertubuhan-peladang">
+                <h3>7. Lembaga Pertubuhan Peladang<span class="gallery-tag">2025</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('dewan', -1)">&#10094;</button>
-                    <div class="carousel-track" id="track-dewan">
+                    <div class="carousel-track" id="track-lembaga-pertubuhan-peladang">
                         <div class="carousel-slide">
-                            <img src="img/gallery/vqjM_GWqbRws6zxOyZJWv.jpg" alt="Dewan Usahawan" onclick="openLightbox(this.src)">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/gallery/ykH-bgBgEDSvw7gt1PiB_.jpg" alt="Dewan Usahawan" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/lembaga-pertubuhan-peladang-1.jpg" alt="Lembaga Pertubuhan Peladang — kursus AI 2025, foto 1 daripada 1" width="701" height="468" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('dewan', 1)">&#10095;</button>
                 </div>
             </div>
 
-            <div class="agency-gallery" id="gallery-taman">
-                <h3>Taman-taman Sabah</h3>
+            <div class="agency-gallery" id="gallery-dewan-usahawan">
+                <h3>8. Dewan Usahawan Melayu Sabah<span class="gallery-tag">2025</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('taman', -1)">&#10094;</button>
-                    <div class="carousel-track" id="track-taman">
+                    <button class="carousel-btn prev" onclick="moveSlide('dewan-usahawan', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-dewan-usahawan">
                         <div class="carousel-slide">
-                            <img src="img/gallery/cqb9WJWTpWIDY5z-HWT9w.jpg" alt="Taman Sabah" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/dewan-usahawan-1.jpg" alt="Dewan Usahawan Melayu Sabah — kursus AI 2025, foto 1 daripada 2" width="811" height="453" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img src="img/gallery/ojYFPn-deOujGw5ExUwFN.jpg" alt="Taman Sabah" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/dewan-usahawan-2.jpg" alt="Dewan Usahawan Melayu Sabah — kursus AI 2025, foto 2 daripada 2" width="618" height="452" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('taman', 1)">&#10095;</button>
+                    <button class="carousel-btn next" onclick="moveSlide('dewan-usahawan', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
+
+            <div class="agency-gallery" id="gallery-taman-sabah">
+                <h3>9. Taman-taman Sabah<span class="gallery-tag">2025</span></h3>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide('taman-sabah', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-taman-sabah">
+                        <div class="carousel-slide">
+                            <img src="img/gallery/taman-sabah-1.jpg" alt="Taman-taman Sabah — kursus AI 2025, foto 1 daripada 2" width="763" height="459" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/taman-sabah-2.jpg" alt="Taman-taman Sabah — kursus AI 2025, foto 2 daripada 2" width="616" height="466" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('taman-sabah', 1)" aria-label="Foto seterusnya">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="agency-gallery" id="gallery-upko-inanam">
+                <h3>10. UPKO Inanam<span class="gallery-tag">2025</span></h3>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide('upko-inanam', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-upko-inanam">
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/upko-inanam-1.jpg" alt="UPKO Inanam — kursus AI 2025, foto 1 daripada 2" width="1080" height="318" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/upko-inanam-2.jpg" alt="UPKO Inanam — kursus AI 2025, foto 2 daripada 2" width="1453" height="562" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('upko-inanam', 1)" aria-label="Foto seterusnya">&#10095;</button>
+                </div>
+            </div>
+
+            <h3 class="gallery-year">2026</h3>
 
             <div class="agency-gallery" id="gallery-putatan">
-                <h3>Pejabat Daerah Putatan</h3>
+                <h3>11. Pejabat Daerah Putatan<span class="gallery-tag">2026</span></h3>
                 <div class="carousel">
-                    <button class="carousel-btn prev" onclick="moveSlide('putatan', -1)">&#10094;</button>
+                    <button class="carousel-btn prev" onclick="moveSlide('putatan', -1)" aria-label="Foto sebelum">&#10094;</button>
                     <div class="carousel-track" id="track-putatan">
                         <div class="carousel-slide">
-                            <img src="img/gallery/J-k9fVfsxN_khilY1Cx7G.jpg" alt="Putatan" onclick="openLightbox(this.src)">
+                            <img class="photo-fit" src="img/gallery/putatan-1.jpg" alt="Pejabat Daerah Putatan — kursus AI 2026, foto 1 daripada 4" width="1080" height="417" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img src="img/gallery/torMel6ua2ov3WQsB98AT.jpg" alt="Putatan" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/putatan-2.jpg" alt="Pejabat Daerah Putatan — kursus AI 2026, foto 2 daripada 4" width="453" height="339" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                         <div class="carousel-slide">
-                            <img class="photo-fit" src="img/pejabat-daerah-putatan-kursus-ai-2026.jpg" alt="Kursus AI di Bilik Mesyuarat Sri Keramat, Pejabat Daerah Putatan" onclick="openLightbox(this.src)">
+                            <img class="photo-fit" src="img/gallery/putatan-3.jpg" alt="Pejabat Daerah Putatan — kursus AI 2026, foto 3 daripada 4" width="573" height="286" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/putatan-4.jpg" alt="Pejabat Daerah Putatan — kursus AI 2026, foto 4 daripada 4" width="650" height="245" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
-                    <button class="carousel-btn next" onclick="moveSlide('putatan', 1)">&#10095;</button>
-                </div>
-            </div>
-
-            <div class="agency-gallery" id="gallery-iksnita">
-                <h3>Persatuan Industri Kecil dan Sederhana Wanita Sabah (IKSNita)</h3>
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <div class="carousel-slide">
-                            <img class="photo-fit" src="img/iksnita-perantis-go-digital-2026.jpg" alt="Program Perantis Go Digital 2026 bersama IKSNita" onclick="openLightbox(this.src)">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="agency-gallery" id="gallery-tanjungaru">
-                <h3>Perpustakaan Tanjung Aru</h3>
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <div class="carousel-slide">
-                            <img class="photo-fit" src="img/perpustakaan-tanjung-aru-ai-literasi-2026.jpg" alt="Bengkel literasi AI di American Corner Sabah, Perpustakaan Tanjung Aru" onclick="openLightbox(this.src)">
-                        </div>
-                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('putatan', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
 
             <div class="agency-gallery" id="gallery-nabawan">
-                <h3>Pejabat Daerah Nabawan</h3>
+                <h3>12. Pejabat Daerah Nabawan<span class="gallery-tag">2026</span></h3>
                 <div class="carousel">
-                    <div class="carousel-track">
+                    <button class="carousel-btn prev" onclick="moveSlide('nabawan', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-nabawan">
                         <div class="carousel-slide">
-                            <img class="photo-fit" src="img/pejabat-daerah-nabawan-kursus-ai-2026.jpg" alt="Kursus AI di Pejabat Daerah Nabawan" onclick="openLightbox(this.src)">
+                            <img src="img/gallery/nabawan-1.jpg" alt="Pejabat Daerah Nabawan — kursus AI 2026, foto 1 daripada 4" width="749" height="422" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/nabawan-2.jpg" alt="Pejabat Daerah Nabawan — kursus AI 2026, foto 2 daripada 4" width="578" height="434" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/nabawan-3.jpg" alt="Pejabat Daerah Nabawan — kursus AI 2026, foto 3 daripada 4" width="749" height="562" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/nabawan-4.jpg" alt="Pejabat Daerah Nabawan — kursus AI 2026, foto 4 daripada 4" width="547" height="602" decoding="async" onclick="openLightbox(this.src)">
                         </div>
                     </div>
+                    <button class="carousel-btn next" onclick="moveSlide('nabawan', 1)" aria-label="Foto seterusnya">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="agency-gallery" id="gallery-tanjung-aru">
+                <h3>13. Perpustakaan Tanjung Aru<span class="gallery-tag">2026</span></h3>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide('tanjung-aru', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-tanjung-aru">
+                        <div class="carousel-slide">
+                            <img src="img/gallery/tanjung-aru-1.jpg" alt="Perpustakaan Tanjung Aru — kursus AI 2026, foto 1 daripada 4" width="685" height="514" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/tanjung-aru-2.jpg" alt="Perpustakaan Tanjung Aru — kursus AI 2026, foto 2 daripada 4" width="685" height="514" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/tanjung-aru-3.jpg" alt="Perpustakaan Tanjung Aru — kursus AI 2026, foto 3 daripada 4" width="685" height="514" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/gallery/tanjung-aru-4.jpg" alt="Perpustakaan Tanjung Aru — kursus AI 2026, foto 4 daripada 4" width="685" height="514" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('tanjung-aru', 1)" aria-label="Foto seterusnya">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="agency-gallery" id="gallery-iksnita">
+                <h3>14. IKSNita Sabah<span class="gallery-tag">2026</span></h3>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide('iksnita', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-iksnita">
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/iksnita-1.jpg" alt="IKSNita Sabah — kursus AI 2026, foto 1 daripada 2" width="1600" height="716" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/iksnita-2.jpg" alt="IKSNita Sabah — kursus AI 2026, foto 2 daripada 2" width="1595" height="714" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('iksnita', 1)" aria-label="Foto seterusnya">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="agency-gallery" id="gallery-perantis-go-digital">
+                <h3>15. Perantis Go Digital – Keretapi Bersarong<span class="gallery-tag">2026</span></h3>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide('perantis-go-digital', -1)" aria-label="Foto sebelum">&#10094;</button>
+                    <div class="carousel-track" id="track-perantis-go-digital">
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/perantis-go-digital-1.jpg" alt="Perantis Go Digital – Keretapi Bersarong — kursus AI 2026, foto 1 daripada 2" width="1453" height="649" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="photo-fit" src="img/gallery/perantis-go-digital-2.jpg" alt="Perantis Go Digital – Keretapi Bersarong — kursus AI 2026, foto 2 daripada 2" width="1453" height="650" decoding="async" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('perantis-go-digital', 1)" aria-label="Foto seterusnya">&#10095;</button>
                 </div>
             </div>
         </section>
@@ -1286,14 +1436,21 @@
 
     <script>
         const carouselState = {
-            kkrs: { current: 0, total: 1 },
-            yayasan: { current: 0, total: 1 },
-            hasilbumi: { current: 0, total: 1 },
-            kesihatan: { current: 0, total: 1 },
-            ums: { current: 0, total: 1 },
-            dewan: { current: 0, total: 1 },
-            taman: { current: 0, total: 1 },
-            putatan: { current: 0, total: 2 }
+            'kkrs': { current: 0, total: 1 },
+            'yayasan-sabah': { current: 0, total: 3 },
+            'hasil-bumi': { current: 0, total: 1 },
+            'kementerian-kesihatan': { current: 0, total: 2 },
+            'sedafiat': { current: 0, total: 1 },
+            'ums': { current: 0, total: 1 },
+            'lembaga-pertubuhan-peladang': { current: 0, total: 0 },
+            'dewan-usahawan': { current: 0, total: 1 },
+            'taman-sabah': { current: 0, total: 1 },
+            'upko-inanam': { current: 0, total: 1 },
+            'putatan': { current: 0, total: 3 },
+            'nabawan': { current: 0, total: 3 },
+            'tanjung-aru': { current: 0, total: 3 },
+            'iksnita': { current: 0, total: 1 },
+            'perantis-go-digital': { current: 0, total: 1 }
         };
 
         function moveSlide(galleryId, direction) {
